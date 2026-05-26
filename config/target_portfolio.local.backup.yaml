@@ -1,0 +1,31 @@
+# Target allocation for the first 30 000 RUB portfolio package.
+# Tickers are MOEX tickers used as user-facing labels.
+
+cash_reserve_percent: 0.03
+rebalance_threshold: 0.03
+
+positions:
+  SBER:
+    name: Сбербанк
+    target_percent: 0.30
+    role: Ядро портфеля, дивиденды, финсектор
+  LKOH:
+    name: Лукойл
+    target_percent: 0.17
+    role: Нефтяной дивидендный якорь
+  YDEX:
+    name: Яндекс
+    target_percent: 0.13
+    role: Ростовая часть
+  X5:
+    name: X5 Group
+    target_percent: 0.08
+    role: Защитный потребительский сектор
+  PLZL:
+    name: Полюс
+    target_percent: 0.14
+    role: Золото, защитный хедж
+  MOEX:
+    name: Московская биржа
+    target_percent: 0.15
+    role: Инфраструктурная ставка на рынок

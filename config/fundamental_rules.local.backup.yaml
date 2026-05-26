@@ -1,0 +1,135 @@
+# Fundamental filter rules.
+# MVP: sectors and manual metrics are configurable; dividends are loaded from T-Invest API.
+# T-Bank fundamentals are used as an automatic source when available.
+# If T-Bank does not return multipliers for Russian shares, fill this manual block from trusted sources.
+
+sector_limits:
+  # Default limit for sectors that are not explicitly configured.
+  default_max_percent: 0.35
+  overrides:
+    # SBER 30% + MOEX 15% are part of the target model, so financial sector limit must allow 45%.
+    financial: 0.45
+    energy: 0.25
+    it: 0.20
+    consumer: 0.15
+    materials: 0.20
+
+# Global fallback thresholds. Used when the sector has no specific override.
+thresholds:
+  report_wait_days: 5
+  dividend_wait_days_before_last_buy: 7
+  dividend_risk_days_after_record: 5
+  max_pe: 25
+  max_pb: 5
+  min_roe_percent: 10
+  max_debt_to_ebitda: 3
+  max_ev_to_ebitda: 15
+
+# Sector-specific metric thresholds.
+# These values override the global thresholds only for the listed sector.
+metric_thresholds_by_sector:
+  financial:
+    max_pe: 15
+    max_pb: 3
+    min_roe_percent: 15
+
+  energy:
+    max_pe: 25
+    max_pb: 3
+    min_roe_percent: 10
+    max_ev_to_ebitda: 8
+    max_debt_to_ebitda: 2.5
+
+  materials:
+    max_pe: 20
+    max_pb: 15
+    min_roe_percent: 10
+    max_ev_to_ebitda: 10
+    max_debt_to_ebitda: 2.5
+
+  it:
+    max_pe: 35
+    max_pb: 10
+    min_roe_percent: 10
+    max_ev_to_ebitda: 20
+    max_debt_to_ebitda: 2.5
+
+  consumer:
+    max_pe: 25
+    max_pb: 12
+    min_roe_percent: 10
+    max_ev_to_ebitda: 12
+    max_debt_to_ebitda: 3
+
+# Manual report calendar until we wire an API/parser for earnings dates.
+reports:
+  SBER:
+    next_report_date: 2026-08-27
+  LKOH:
+    next_report_date: 2026-08-28
+  YDEX:
+    next_report_date: 2026-07-29
+  X5:
+    next_report_date: 2026-08-20
+  PLZL:
+    next_report_date: 2026-08-15
+  MOEX:
+    next_report_date: 2026-08-15
+
+# Manual metrics. Fill gradually from trusted sources.
+# Empty value means the filter will not block the ticker by this metric.
+# Percent fields are stored as plain percent numbers, for example 18.5 means 18.5%.
+metrics:
+  SBER:
+    pe: 4.05
+    pb: 0.81
+    ev_to_ebitda: null
+    roe_percent: 24.4
+    debt_to_ebitda: null
+    dividend_yield_percent: 0.0
+    market_capitalization: 7201000000000
+
+  LKOH:
+    pe: 37.5
+    pb: 1.06
+    ev_to_ebitda: 3.58
+    roe_percent: 2.8
+    debt_to_ebitda: -0.31
+    dividend_yield_percent: 13.5
+    market_capitalization: 3474000000000
+
+  YDEX:
+    pe: 9.80
+    pb: 7.75
+    ev_to_ebitda: 5.64
+    roe_percent: 42.3
+    debt_to_ebitda: 0.39
+    dividend_yield_percent: 4.7
+    market_capitalization: 1601000000000
+
+  X5:
+    pe: 8.60
+    pb: null
+    ev_to_ebitda: 3.38
+    roe_percent: 73.5
+    debt_to_ebitda: 1.13
+    dividend_yield_percent: 24.8
+    market_capitalization: 671900000000
+
+  PLZL:
+    pe: 9.15
+    pb: 11.0
+    ev_to_ebitda: 6.62
+    roe_percent: 115.6
+    debt_to_ebitda: 1.07
+    dividend_yield_percent: 7.7
+    market_capitalization: 2874000000000
+
+  MOEX:
+    pe: 6.22
+    pb: 1.65
+    ev_to_ebitda: 4.27
+    roe_percent: 22.1
+    debt_to_ebitda: 0
+    dividend_yield_percent: 11.3
+    market_capitalization: 393300000000

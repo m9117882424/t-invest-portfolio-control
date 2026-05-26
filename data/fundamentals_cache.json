@@ -1,0 +1,200 @@
+{
+  "updated_at": "2026-05-25T15:33:01.295478+00:00",
+  "records": {
+    "LKOH": {
+      "ticker": "LKOH",
+      "name": "ЛУКОЙЛ",
+      "figi": "BBG004731032",
+      "sector": "energy",
+      "country": "Российская Федерация",
+      "metrics": {
+        "pe": "37.5",
+        "pb": "1.06",
+        "roe_percent": "2.8",
+        "debt_to_ebitda": "-0.31",
+        "ev_to_ebitda": "3.58",
+        "dividend_yield_percent": "13.5",
+        "market_capitalization": "3474000000000"
+      },
+      "events": {
+        "next_report_date": "2026-08-28T00:00:00+00:00",
+        "next_dividend_last_buy_date": null,
+        "next_dividend_record_date": null,
+        "next_dividend_payment_date": null
+      },
+      "sources": {
+        "instrument": "tbank",
+        "sector": "tbank",
+        "dividends": "tbank",
+        "metrics": "manual",
+        "reports": "manual"
+      },
+      "notes": [
+        "T-Bank asset_uid is empty",
+        "T-Bank: upcoming dividends not found"
+      ]
+    },
+    "MOEX": {
+      "ticker": "MOEX",
+      "name": "Московская Биржа",
+      "figi": "BBG004730JJ5",
+      "sector": "financial",
+      "country": "Российская Федерация",
+      "metrics": {
+        "pe": "6.22",
+        "pb": "1.65",
+        "roe_percent": "22.1",
+        "debt_to_ebitda": "0",
+        "ev_to_ebitda": "4.27",
+        "dividend_yield_percent": "11.3",
+        "market_capitalization": "393300000000"
+      },
+      "events": {
+        "next_report_date": "2026-08-15T00:00:00+00:00",
+        "next_dividend_last_buy_date": "2026-07-08T00:00:00+00:00",
+        "next_dividend_record_date": "2026-07-09T00:00:00+00:00",
+        "next_dividend_payment_date": "2026-07-23T00:00:00+00:00"
+      },
+      "sources": {
+        "instrument": "tbank",
+        "sector": "tbank",
+        "dividends": "tbank",
+        "metrics": "manual",
+        "reports": "manual"
+      },
+      "notes": [
+        "T-Bank asset_uid is empty"
+      ]
+    },
+    "PLZL": {
+      "ticker": "PLZL",
+      "name": "Полюс",
+      "figi": "BBG000R607Y3",
+      "sector": "materials",
+      "country": "Российская Федерация",
+      "metrics": {
+        "pe": "9.15",
+        "pb": "11.0",
+        "roe_percent": "115.6",
+        "debt_to_ebitda": "1.07",
+        "ev_to_ebitda": "6.62",
+        "dividend_yield_percent": "7.7",
+        "market_capitalization": "2874000000000"
+      },
+      "events": {
+        "next_report_date": "2026-08-15T00:00:00+00:00",
+        "next_dividend_last_buy_date": null,
+        "next_dividend_record_date": null,
+        "next_dividend_payment_date": null
+      },
+      "sources": {
+        "instrument": "tbank",
+        "sector": "tbank",
+        "dividends": "tbank",
+        "metrics": "manual",
+        "reports": "manual"
+      },
+      "notes": [
+        "T-Bank asset_uid is empty",
+        "T-Bank: upcoming dividends not found"
+      ]
+    },
+    "SBER": {
+      "ticker": "SBER",
+      "name": "Сбер Банк",
+      "figi": "BBG004730N88",
+      "sector": "financial",
+      "country": "Российская Федерация",
+      "metrics": {
+        "pe": "4.05",
+        "pb": "0.81",
+        "roe_percent": "24.4",
+        "debt_to_ebitda": null,
+        "ev_to_ebitda": null,
+        "dividend_yield_percent": "0.0",
+        "market_capitalization": "7201000000000"
+      },
+      "events": {
+        "next_report_date": "2026-08-27T00:00:00+00:00",
+        "next_dividend_last_buy_date": "2026-07-17T00:00:00+00:00",
+        "next_dividend_record_date": "2026-07-20T00:00:00+00:00",
+        "next_dividend_payment_date": "2026-08-03T00:00:00+00:00"
+      },
+      "sources": {
+        "instrument": "tbank",
+        "sector": "tbank",
+        "dividends": "tbank",
+        "metrics": "manual",
+        "reports": "manual"
+      },
+      "notes": [
+        "T-Bank asset_uid is empty"
+      ]
+    },
+    "X5": {
+      "ticker": "X5",
+      "name": "Корпоративный Центр Икс 5",
+      "figi": "TCS03A108X38",
+      "sector": "consumer",
+      "country": "Российская Федерация",
+      "metrics": {
+        "pe": "8.6",
+        "pb": null,
+        "roe_percent": "73.5",
+        "debt_to_ebitda": "1.13",
+        "ev_to_ebitda": "3.38",
+        "dividend_yield_percent": "24.8",
+        "market_capitalization": "671900000000"
+      },
+      "events": {
+        "next_report_date": "2026-08-20T00:00:00+00:00",
+        "next_dividend_last_buy_date": "2026-07-06T00:00:00+00:00",
+        "next_dividend_record_date": "2026-07-07T00:00:00+00:00",
+        "next_dividend_payment_date": "2026-07-21T00:00:00+00:00"
+      },
+      "sources": {
+        "instrument": "tbank",
+        "sector": "tbank",
+        "dividends": "tbank",
+        "metrics": "manual",
+        "reports": "manual"
+      },
+      "notes": [
+        "T-Bank asset_uid is empty"
+      ]
+    },
+    "YDEX": {
+      "ticker": "YDEX",
+      "name": "Яндекс",
+      "figi": "TCS00A107T19",
+      "sector": "it",
+      "country": "Российская Федерация",
+      "metrics": {
+        "pe": "9.8",
+        "pb": "7.75",
+        "roe_percent": "42.3",
+        "debt_to_ebitda": "0.39",
+        "ev_to_ebitda": "5.64",
+        "dividend_yield_percent": "4.7",
+        "market_capitalization": "1601000000000"
+      },
+      "events": {
+        "next_report_date": "2026-07-29T00:00:00+00:00",
+        "next_dividend_last_buy_date": null,
+        "next_dividend_record_date": null,
+        "next_dividend_payment_date": null
+      },
+      "sources": {
+        "instrument": "tbank",
+        "sector": "tbank",
+        "dividends": "tbank",
+        "metrics": "manual",
+        "reports": "manual"
+      },
+      "notes": [
+        "T-Bank asset_uid is empty",
+        "T-Bank: upcoming dividends not found"
+      ]
+    }
+  }
+}
