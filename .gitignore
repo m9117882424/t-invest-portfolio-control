@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# Local config backups
+config/*.local.backup.yaml
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs / reports
+logs/
+reports/
+*.log
+
+# Runtime data / cache
+data/fundamentals_cache.json
+data/automation_state.json
+data/*.jsonl
+
+# Databases
+*.sqlite
+*.sqlite3
+*.db
